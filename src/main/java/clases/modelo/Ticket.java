@@ -1,4 +1,4 @@
-package model.classes;
+package clases.modelo;
 
 public class Ticket {
 }

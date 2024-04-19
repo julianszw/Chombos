@@ -1,9 +1,18 @@
-package model.classes;
-
-import java.util.List;
+package clases.modelo;
 
 //aka Component
 public abstract class ProductoComponent {
-    private List<ProductoComponent> items;
+    private String nombre;
+
+    public ProductoComponent(String nombre) {
+        this.nombre = nombre;
+    }
+
     abstract float calcularPrecio();
+    public String getNombre() {
+        return nombre;
+    }
+
+
+
 }

@@ -1,25 +1,22 @@
-package model.classes;
+package clases.modelo;
 
 public class Producto extends ProductoComponent {
-    private float precio;
-    private String nombre;
+    private float precioUnitario;
 
-    public Producto(String nombre, float precio) {
-        this.nombre = nombre;
-        this.precio = precio;
+    public Producto(String nombre, float precioUnitario) {
+        super(nombre);
+        this.precioUnitario = precioUnitario;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
+
 
     @Override
     float calcularPrecio() {
-        return precio;
+        return precioUnitario;
     }
 
     @Override
     public String toString() {
-        return nombre;
+        return super.getNombre();
     }
 }
