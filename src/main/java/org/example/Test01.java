@@ -18,6 +18,7 @@ public class Test01 {
     private static void mostrarMenu(ArrayList<ProductoComponent> menuFinal) {
         for (ProductoComponent p : menuFinal) {
             System.out.println(p);
+
         }
     }
 

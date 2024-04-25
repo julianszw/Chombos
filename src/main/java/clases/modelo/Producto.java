@@ -1,5 +1,7 @@
 package clases.modelo;
 
+import algoritmos.precio.AlgoritmoPrecio;
+
 public class Producto extends ProductoComponent {
     private float precioUnitario;
 
@@ -9,9 +11,8 @@ public class Producto extends ProductoComponent {
     }
 
 
-
     @Override
-    float calcularPrecio() {
+    float calcularPrecio(AlgoritmoPrecio algoritmoPrecio) {
         return precioUnitario;
     }
 
@@ -19,4 +20,6 @@ public class Producto extends ProductoComponent {
     public String toString() {
         return super.getNombre();
     }
+
+
 }

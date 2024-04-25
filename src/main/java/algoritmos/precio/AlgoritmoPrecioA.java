@@ -1,11 +1,11 @@
 package algoritmos.precio;
 
-public class AlgoritmoPrecioA {
+public class AlgoritmoPrecioA extends AlgoritmoPrecio{
     private static final double PONDERADOR_DESCUENTO = 0.9;
 
-    public static float calcularPrecioFinal(float total) {
-        return (float) (total * PONDERADOR_DESCUENTO);
+
+    @Override
+    float calcularPrecioFinal(float subtotal) {
+        return 0;
     }
-
-
 }

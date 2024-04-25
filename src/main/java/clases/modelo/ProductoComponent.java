@@ -1,5 +1,7 @@
 package clases.modelo;
 
+import algoritmos.precio.AlgoritmoPrecio;
+
 //aka Component
 public abstract class ProductoComponent {
     private String nombre;
@@ -8,7 +10,7 @@ public abstract class ProductoComponent {
         this.nombre = nombre;
     }
 
-    abstract float calcularPrecio();
+    abstract float calcularPrecio(AlgoritmoPrecio algoritmoPrecio);
     public String getNombre() {
         return nombre;
     }

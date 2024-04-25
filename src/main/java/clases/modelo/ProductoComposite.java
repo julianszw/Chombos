@@ -1,6 +1,8 @@
 package clases.modelo;
 
+import algoritmos.precio.AlgoritmoPrecio;
 import algoritmos.precio.AlgoritmoPrecioA;
+import algoritmos.precio.AlgoritmoPrecioC;
 
 import java.util.ArrayList;
 
@@ -27,12 +29,12 @@ public class ProductoComposite extends ProductoComponent {
     }
 
     @Override
-    public float calcularPrecio() {
+    public float calcularPrecio(AlgoritmoPrecio algoritmoPrecio) {
         float precioTotal = 0;
         for (ProductoComponent producto : productoComponents) {
             precioTotal += producto.calcularPrecio();
         }
-        return AlgoritmoPrecioA.calcularPrecioFinal(precioTotal);
+        return algoritmoPrecio.calcularPrecioFinal(precioTotal);
     }
 
     @Override

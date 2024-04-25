@@ -1,7 +1,9 @@
 package algoritmos.precio;
 
-public class AlgoritmoPrecioC {
-    public static float calcularPrecioFinal(float total) {
-        return (float) (total * PONDERADOR_DESCUENTO);
+public class AlgoritmoPrecioC extends AlgoritmoPrecio{
+
+    @Override
+    float calcularPrecioFinal(float subtotal) {
+        return 0;
     }
 }
